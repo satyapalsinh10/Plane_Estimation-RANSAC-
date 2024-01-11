@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository contains a Python implementation of the RANSAC algorithm for robust plane fitting in 3D point clouds using the Open3D library. The code iteratively samples points, calculates plane parameters, and identifies inliers based on a specified distance threshold. The best-fit plane and corresponding inliers are extracted from a demo point cloud, and inliers are colored in red for visualization.
+This repository contains a Python implementation of the RANSAC algorithm for robust plane fitting in 3D point clouds using the [Open3D](https://github.com/isl-org/Open3D/tree/main) library. The code iteratively samples points, calculates plane parameters, and identifies inliers based on a specified distance threshold. The best-fit plane and corresponding inliers are extracted from a demo point cloud, and inliers are colored in red for visualization.
 
 ## Dependencies
 
@@ -34,8 +34,14 @@ $ git clone https://github.com/satyapalsinh10/Plane_Estimation_RANSAC.git
 $ cd Plane_Estimation_RANSAC
 ```
 
+2. **Download the dataset from open3d in .pcd format**(_optional_)
 
-2. **Run the example script:**
+ ```
+$ python data_downloader.py
+ ```  
+
+
+3. **Run the example script:**
 
 ```
 $ python ransac_plane_est.py
