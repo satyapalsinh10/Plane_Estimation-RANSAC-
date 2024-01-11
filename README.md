@@ -38,7 +38,10 @@ $ cd Plane_Estimation_RANSAC
 
  ```
 $ python data_downloader.py
- ```  
+ ```
+
+This script downloads the PCDPointCloud dataset, read it into a point cloud object, and then visualize it using Open3D. Additionally, it saves the downloaded point cloud to a file named downloaded_point_cloud.pcd in the current working directory.
+
 
 
 3. **Run the example script:**
@@ -54,6 +57,8 @@ This script reads a demo point cloud, fits a plane using the RANSAC algorithm, a
 You can customize the RANSAC parameters such as max_iterations and distance_threshold in the fit_plane_ransac function to suit your specific use case.
 
 ## File Structure
+
+- data_downloader.py: Downloads the point cloud from open3d in .pcd file format.
 
 - ransac_plane_est.py: The main script containing the RANSAC plane fitting implementation.
 
